@@ -13,9 +13,9 @@ class App extends Component {
 		super(props);
 		this.state = {
 			data: [
-				{name: 'John C.', salary: 800, increase: false, rise: true, id: 1},
-				{name: 'Alex M.', salary: 1500, increase: true, rise: false, id: 2},
-				{name: 'Carl W.', salary: 2000, increase: false, rise: false, id: 3}
+				{name: 'Поліщук Я.', salary: 800, increase: false, rise: true, id: 1},
+				{name: 'Ковальчук В.', salary: 1500, increase: true, rise: false, id: 2},
+				{name: 'Коваленко Ю.', salary: 2000, increase: false, rise: false, id: 3}
 			],
 			term: '',
 			filter: 'all'
@@ -78,7 +78,7 @@ class App extends Component {
 	switch (filter) {
 		case 'rise':
 			return items.filter(item => item.rise)
-		case 'moreThen1000':
+		case 'moreThan1000':
 			return items.filter(item => item.salary > 1000)
 		default:
 			return items
